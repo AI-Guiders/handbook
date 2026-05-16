@@ -13,20 +13,21 @@
 
 ## Как править handbook
 
-**Через GitHub:** Wiki → нужная страница → Edit.
+**Через GitHub:** [Wiki](https://github.com/AI-Guiders/handbook/wiki) → страница → Edit.
 
-**Пакетно (git):** клон wiki-репозитория, правки, push:
+**В этом репо (удобно в IDE):** каталог **`wiki/`** — те же `.md`, что на GitHub Wiki. После правок синхронизируй в wiki-репозиторий:
 
 ```powershell
 git clone https://github.com/AI-Guiders/handbook.wiki.git
+Copy-Item -Recurse -Force wiki\* handbook.wiki\
 cd handbook.wiki
-# правки .md
 git add -A
+git status
 git commit -m "docs(handbook): …"
 git push origin master
 ```
 
-Каталог **`wiki-staging/`** в этом репо — зеркало страниц для удобного diff/ревью в IDE. После правок скопируй изменения в `handbook.wiki` и запушь (как в примере выше). `_Sidebar.md` — боковое меню wiki.
+`_Sidebar.md` в **`wiki/`** — боковое меню wiki. Альтернатива: правки только в `handbook.wiki` без каталога `wiki/` в этом репо.
 
 ## Структура wiki (оглавление)
 
