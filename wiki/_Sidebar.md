@@ -9,9 +9,11 @@
 - [WORK / HUMAN](Протокол-режимов-WORK-и-HUMAN)
 
 ### Участие
+- [Onboarding за 30 минут](Onboarding-за-30-минут)
 - [Чеклист первой недели](Чеклист-первой-недели)
 
 ### KB
+- [Шаблон решения KB](Шаблон-решения-KB)
 - [kb-public wiki](https://github.com/AI-Guiders/kb-public/wiki/Home)
 
 ### Прочее
